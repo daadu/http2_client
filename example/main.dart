@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:cli_repl/cli_repl.dart';
 import 'package:http/http.dart';
 import 'package:http2_client/http2_client.dart';
@@ -15,7 +16,7 @@ Future<void> main() async {
 
   for (var url in repl.run()) {
     if (url == 'quit') break;
-    var response = await client.get(url, headers: {
+    var response = await client.get(Uri.parse(url), headers: {
       'accept': '*/*',
       'accept-encoding': 'gzip, deflate',
       'user-agent':

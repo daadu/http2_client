@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:angel_framework/angel_framework.dart';
-import 'package:angel_framework/http.dart';
-import 'package:angel_framework/http2.dart';
+
+import 'package:angel3_framework/angel3_framework.dart';
+import 'package:angel3_framework/http.dart';
+import 'package:angel3_framework/http2.dart';
 import 'package:http/http.dart';
 import 'package:http2_client/http2_client.dart';
 import 'package:test/test.dart';
